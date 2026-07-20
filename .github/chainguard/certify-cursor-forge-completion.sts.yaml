@@ -1,0 +1,11 @@
+issuer: https://token.actions.githubusercontent.com
+subject: repo:liatrio-labs/cursor-forge:ref:refs/heads/main
+claim_pattern:
+  job_workflow_ref: liatrio-labs/cursor-forge/.github/workflows/request-completion-review.yml@refs/heads/main
+
+permissions:
+  contents: write
+  pull_requests: write
+
+repositories:
+  - cursor-forge
