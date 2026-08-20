@@ -1,0 +1,9 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "^repo:liatrio-labs(@223510100)?/[A-Za-z0-9._-]+(@[0-9]+)?:ref:refs/heads/main$"
+claim_pattern:
+  job_workflow_ref: "^liatrio-labs/forge-infrastructure/\\.github/workflows/[^/]+\\.yml@.*$"
+  repository_owner_id: "^223510100$"
+permissions:
+  contents: read
+repositories:
+  - forge-infrastructure
