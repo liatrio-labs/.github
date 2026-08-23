@@ -1,0 +1,12 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "^repo:liatrio-labs@223510100/forge-infrastructure@1314225593:environment:forge-atlassian$"
+claim_pattern:
+  ref: "^refs/tags/forge-provisioning-v1$"
+  job_workflow_ref: "^liatrio-labs/forge-infrastructure/\\.github/workflows/jira-execute\\.yml@refs/tags/forge-provisioning-v1$"
+  repository_owner_id: "^223510100$"
+  repository_id: "^1314225593$"
+  repository: "^liatrio-labs/forge-infrastructure$"
+permissions:
+  contents: read
+repositories:
+  - product-forge
