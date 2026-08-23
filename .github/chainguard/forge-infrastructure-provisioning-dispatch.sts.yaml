@@ -1,0 +1,10 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "^repo:liatrio-labs(@223510100)?/product-forge(@1307907228)?:ref:refs/heads/main$"
+audience: forge-provisioning
+claim_pattern:
+  job_workflow_ref: "^liatrio-labs/forge-infrastructure/\\.github/workflows/jira-(create|invite|configure|verify)\\.yml@[0-9a-f]{40}$"
+  repository_owner_id: "^223510100$"
+permissions:
+  actions: write
+repositories:
+  - forge-infrastructure
