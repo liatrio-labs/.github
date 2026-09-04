@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: "^repo:liatrio-labs@223510100/forge-infrastructure@1314225593:environment:forge-atlassian$"
+subject_pattern: "^repo:liatrio-labs@223510100/forge-infrastructure@1314225593:environment:(forge-atlassian|forge-slack)$"
 claim_pattern:
   ref: "^refs/tags/forge-provisioning-v1$"
   job_workflow_ref: "^liatrio-labs/forge-infrastructure/\\.github/workflows/jira-execute\\.yml@refs/tags/forge-provisioning-v1$"
